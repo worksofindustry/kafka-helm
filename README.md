@@ -1,19 +1,8 @@
 # Confluent Open Source Helm Chart
 
-**The Confluent Platform Helm charts are in developer preview and are not supported for production use.**
-
-The [Confluent Platform Helm charts](https://github.com/confluentinc/cp-helm-charts) enable you to deploy Confluent Platform services on Kubernetes for development, test, and proof of concept environments.
-
 ## Documentation
 
 The Confluent Helm Chart documentation is located at [docs.confluent.io](https://docs.confluent.io/current/quickstart/cp-helm-charts/docs/index.html).
-
-## Contributing
-
-We welcome any contributions:
-
-- Report all enhancements, bugs, and tasks as [GitHub issues](https://github.com/confluentinc/cp-helm-charts/issues)
-- Provide fixes or enhancements by opening pull requests in GitHub
 
 ## Thanks
 
@@ -24,3 +13,14 @@ Huge thanks to:
 - [Schema Registry helm chart](https://github.com/kubernetes/charts/tree/master/incubator/schema-registry)
 - [kubernetes-kafka](https://github.com/Yolean/kubernetes-kafka)
 - [docker-kafka](https://github.com/solsson/dockerfiles)
+- [Hydromax USA](https://www.hydromaxusa.com)
+
+## Installation Help
+
+- To install to local repo: git clone https://github.com/worksofindustry/kafka-helm.git
+- After adding in your own value.yaml file rebuild the repo running: helm package kafka-helm from on the 
+  top level of the directory. 
+- After making any changes its best practice to recreate the index.yaml file by going inside of the repo
+  and running helm repo index .
+- Run a dry-run to verify no bugs ex. helm install --dry-run --debug -f ./kafka-helm/charts/cp-kafka/my-values.yaml ./cp-helm-charts >      debug.txt 
+- Keep deployments and release names shorter than 64 char due to DNS naming limitations. 
