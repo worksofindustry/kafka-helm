@@ -17,7 +17,8 @@ Huge thanks to:
 
 ## Installation Help
 
-- To use this repo you'll need a working Kubernetes Cluster, Helm and Tiller installed.
+The documentation out there is limited, so here are some tips that'll help you with your install. To use this repo you'll need a working Kubernetes Cluster, Helm and Tiller installed.
+
 - To install to local repo: git clone https://github.com/worksofindustry/kafka-helm.git
 - After adding in your own value.yaml file rebuild the repo running: helm package kafka-helm from on the 
   top level of the directory. 
