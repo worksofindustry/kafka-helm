@@ -26,3 +26,5 @@ The documentation out there is limited, so here are some tips that'll help you w
   and running helm repo index .
 - Run a dry-run to verify no bugs ex. helm install --dry-run --debug -f ./kafka-helm/charts/cp-kafka/my-values.yaml ./cp-helm-charts >      debug.txt 
 - Keep deployments and release names shorter than 64 char due to DNS naming limitations. 
+
+{{< note >}}**Note:** test note.{{< /note >}}
